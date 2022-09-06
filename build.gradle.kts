@@ -18,12 +18,12 @@ repositories {
 extra["kotlin.version"] = "1.4.31"
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:5.2.1"))
-    implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter")
+    implementation("com.netflix.graphql.dgs:graphql-dgs-webflux-starter")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
